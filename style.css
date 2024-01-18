@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Titillium Web;
+
+}
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background:#f6b147;
+  }
+  
+  ::selection {
+    color: white;
+    background:#f6b147;
+  }
+.navbar {
+    color: white;
+    font-size: 20px;
+}
+
+.navbarSearch:hover{
+    text-decoration: none;
+}
+.navbarFAEN:hover {
+    text-decoration: none;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#close {
+    color: aliceblue;
+    display: none;
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    transition: 0.5s;
+    z-index: 2;
+}
+/* .closeSearchBoxButton{
+    background-color: none;
+} */
+.fa-xmark {
+    color: #fff !important;
+    font-size: 28px !important;
+    /* background-color: rgb(218, 160, 36) !important; */
+    text-align: center !important;
+}
+
+.py-4 {
+    display: none;
+}
+
+.form-control {
+    height: 80px !important;
+}
+
+input,
+input::placeholder {
+    font: 3.25rem/3 sans-serif;
+    color: #fff !important;
+}
+
+input {
+    font-family: Titillium Web !important;
+    font-size: 28px !important;
+    background-color: transparent !important;
+    border-top: 2px solid rgb(218, 160, 36) !important;
+    border-left: 2px solid rgb(218, 160, 36) !important;
+    border-bottom: 2px solid rgb(218, 160, 36) !important;
+    border-right: none !important;
+}
+
+.searchButton {
+    width: 80px !important;
+    height: 80px !important;
+    border-bottom: 2px solid rgb(218, 160, 36) !important;
+    border-top: 2px solid rgb(218, 160, 36) !important;
+    border-right: 2px solid rgb(218, 160, 36) !important;
+    border-left: none !important;
+    background-color: transparent !important;
+}
+
+.fa-magnifying-glass1 {
+    color: #fff !important;
+    font-size: 28px !important;
+}
+
+.videoBackground {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    background-color: black;
+    min-height: 100%;
+    width: 100%;
+    filter: brightness(40%);
+}
+
+#hideButton {
+    z-index: 10 !important;
+}
+
+/* .closeSearchBoxButton {
+    text-align: right !important;
+    margin-bottom: 10px;
+    
+} */
+.closeSearch{
+    text-align: right !important;
+    display: none;
+}
+header {
+    z-index: 10 !important;
+}
+
+.text {
+    position: relative;
+    align-items: center !important;
+    align-content: center !important;
+    text-align: center !important;
+    justify-content: center;
+    /* margin-left: 25%; */
+    width: 100%;
+}
+
+.pargasLogo {
+    width: 100px;
+    height: 100px;
+}
+
+.titlePargasiran {
+    font-size: 90px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+@media only screen and (min-width: 646px) and (max-width: 816px) {
+    .titlePargasiran {
+        font-size: 60px !important;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 646px) {
+    .titlePargasiran {
+        font-size: 25px !important;
+    }
+
+    .pargasLogo {
+        width: 60px;
+        height: 60px;
+    }
+    .watchAndSkip {
+        width: 120px !important;
+        font-size: 14px !important;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+}
+
+.text h2 {
+    font-size: 5em;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1em;
+}
+
+.watchAndSkip {
+    width: 200px;
+    font-size: 15px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    border: solid 2px white;
+    margin: 20px;
+    justify-content: space-between;
+    align-items: center !important;
+    text-align: center !important;
+    justify-content: center !important;
+    z-index: 15 !important;
+}
+
+.watchAndSkip:hover {
+    background-color: rgb(218, 160, 36);
+    border: rgb(218, 160, 36);
+}
+
+.watchAndSkip2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.watchAndSkip2 a:hover {
+    color: #fff;
+}
+
+/* @media only screen and (min-width: 200px) and (max-width: 682px){
+    .watchAndSkip{
+        width: 300px !important;
+    }
+} */
+.SearchBox a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.SearchBox a:hover {
+    color: #fff;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    background-color: black;
+    min-height: 100%;
+}
+
+.navbar-toggler {
+    font-size: 10px;
+}
